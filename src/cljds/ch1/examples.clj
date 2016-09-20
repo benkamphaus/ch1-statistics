@@ -1,13 +1,10 @@
 (ns cljds.ch1.examples
   (:require [cljds.ch1.data :refer :all]
             [cljds.ch1.stats :refer :all]
-            [clojure.string :as str]
             [incanter.charts :as c]
             [incanter.core :as i]
             [incanter.distributions :as d]
-            [incanter.stats :as s]
-            [incanter.svg :as svg]
-            [me.raynes.fs :as fs]))
+            [incanter.stats :as s]))
 
 (defn ex-1-1 []
   (i/col-names (load-data :uk)))
